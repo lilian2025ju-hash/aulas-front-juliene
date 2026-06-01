@@ -1,0 +1,146 @@
+body {
+    background-color: rgb(228, 161, 181);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1, 6;
+}
+
+h1 {
+
+    color: rgb(104, 21, 76);
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 30px;
+    line-height: normal;
+
+}
+
+header {
+    text-align: center;
+    padding-block: 30px;
+    background-color: rgb(248, 243, 247);
+}
+
+
+
+header p {
+    color: rgb(172, 45, 45);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+strong {
+    background-color: rgb(231, 231, 224);
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-block-start: 20px;
+    background-color: white;
+    margin-inline: auto;
+    text-align: center;
+
+}
+
+dt {
+    color: rgb(59, 10, 10);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+details {
+    background-color: rgb(218, 210, 210);
+}
+
+footer {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+
+}
+
+/* .exemplo {
+    text-align: center;
+} */
+
+/* transform: scale(0.7); */
+/*  transform: rotate( 10deg); */
+/* .exemplo img {
+    transform: scale(0.7) rotate(10deg) translate(0);
+    transition: 3s;
+} */
+
+/* transform: scale(1);
+Transfor: rotate(0) */
+/* .exemplo img:hover {
+    transform: scale(1) rotate(0) translate(-100px);
+} */
+
+.exemplo-dois {
+    text-align: center;
+}
+
+.exemplo-dois a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: yellow;
+    padding: 4px;
+    transition: 2s;
+    transform: scale(1);
+
+    /*  necessário para permitir efeitos de transformação */
+    display: inline-block;
+}
+
+.exemplo-dois a:hover {
+    background-color: lightblue;
+    transform: scale(1.2);
+}
+
+
+
+.exemplo-dois {
+    text-align: center;
+}
+
+.exemplo-dois a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: yellow;
+    padding: 4px;
+    transition: 2s;
+    transform: scale(1);
+
+    /*  necessário para permitir efeitos de transformação */
+    display: inline-block;
+}
+
+.exemplo-dois a:hover {
+    background-color: lightblue;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+.exemplo {
+    text-align: center;
+
+    img {
+        transform: scale(0.7) rotate(10deg) translate(0);
+        transition: 3s;
+
+        &:hover {
+            transform: scale(0.7) rotate(10deg) translatey(0);
+            transition: 3s;
+        }
+
+
+    }
+}
