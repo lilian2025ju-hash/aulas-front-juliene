@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medida</title>
+    <style>
+        /* Padrão */
+html{ font-size: 16px;}
+
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background-color: rgb(167, 167, 218);
+        }
+
+        #container {
+            border: dashed 2px #999;
+            margin-block-end: 20px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .caixa {
+            background-color: rgb(78, 78, 134);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            margin-block-end: 10px;
+        }
+/*  pixel: unidade FIXA/ABSOLUTA. o valor nao muda de acordo com a tela */
+        .exemplo-pixels {
+            width: 250px;
+        }
+
+        /* Porcentagem : unidade Relativa / variável */
+        .exemplo-porcentagem{width: 50%;}
+
+
+        /*  REM:unidade RELATIVA/VARIAVEL de acordo com font-size do elemnto raiz/root */
+        .exemplo-rem{ width: 20rem;}
+
+        /* VW ( Viewport Width): unidade Relatica / variavel de acordo com a largura de viewport ( aréa util do navegador) */
+        .exemplo-vw{ width: 50vw;}
+
+/* VW ( Viewport Width): unidade Relatica / variavel de acordo com a largura de viewport ( aréa util do navegador) */
+        .exemplo-vh{ height: 10vh;}
+
+/*  EM: unidade Relativa/Variável de acordo com o font-size do elemento Pai . Atenção : se possivel evite usar esta medida em novos projetos. */
+        .exemplo-em{width: 10em;}
+
+        /*  O tamanho que colocamos na regra acima, depende do valor declarado no font-size da regra abaixo (elemento pai) */
+        .container-2{ font-size: 20px;}
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Comparando as diferenças unidades de medida</h1>
+    <hr>
+    <div id="container">
+        <p><i>Este é o elemento <b>PAI</b></i></p>
+
+        <div class="caixa exemplo-pixels">
+            <p>Aqui usamos<b>pixel</b></p>
+        </div>
+        <div class="caixa exemplo-porcentagem">
+            <p>Aqui usamos <b>porcentagem</b></p>            
+        </div>
+        <div class="caixa exemplo-rem">
+            <p>Aqui usamos <b>rem</b></p>
+            
+        </div>
+        <div class="caixa exemplo-vw">
+            <p>Aqui usamos <b>vw</b></p>            
+        </div>
+<div class="container-2"></div>
+        <div class="caixa exemplo-em"><P>Aqui usamos <b>EM</b></P></div>
+
+    </div>
+
+    <div class=" caixa exemplo-vh"><p>Aqui usamos <b>VH</b></p></div>
+   
+
+
+</body>
+
+</html>

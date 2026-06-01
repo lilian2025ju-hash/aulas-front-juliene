@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Itens</title>
+    <style>
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: aliceblue;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            margin-block-end: 0.8rem;
+        }
+
+        /*  flex container */
+        .container {
+            background-color: #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: nowrap;
+            margin-block: 10px;
+        }
+
+        /* Flex Items */
+        .item {
+            background-color: cadetblue;
+            padding: 20px;
+            text-align: center;
+
+            /* tamanho ideal para o flex */
+            flex-basis: 150px;
+
+            /* definindo se o item cresce */
+            flex-grow: 1;
+
+            /* Definindo se o item encolhe */
+            flex-shrink: 1;
+        }
+
+        .d {
+            background-color: coral;
+            flex-grow: 2;
+        }
+
+        /* shrink como valor maior reduz */
+        .e {
+            flex-shrink: 2;
+            background-color: darkgoldenrod;
+        }
+
+        .f {
+            background-color: crimson;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        .g{
+            background-color:yellowgreen ;
+            order: 3;
+        }
+
+        .h{
+            background-color:pink;
+            order: 3;
+            align-self: center;
+        }
+
+        .i{
+            background-color:blueviolet ;
+            order: 2;
+            align-self: flex-end;
+        }
+
+        .alinhamentos{
+            height: 300px;
+            align-items: flex-start;
+        }
+
+        /*  Forma abreviada (grow, shring, basis) 
+        flex: 1 1 150px*/
+        
+    </style>
+</head>
+
+<body>
+    <h1>Conhecendo e experimentando propriedades Flex para os itens de um container</h1>
+    <div class="container">
+        <div class="item a">item a</div>
+        <div class="item b">item b</div>
+        <div class="item c">item c</div>
+
+    </div>
+
+    <div class="container">
+        <div class="item d">item d</div>
+        <div class="item e">item e</div>
+        <div class="item f">item f</div>
+
+
+    </div>
+
+    </div>
+
+    <div class="container alinhamentos">
+        <div class="item g">item g</div>
+        <div class="item h">item h</div>
+        <div class="item i">item i</div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <style>
+ *,
+        *::before,
+        *::after {
+            box-sizing: border-box;}
+
+
+        body {
+            background-color: rgb(239, 239, 234);
+        }
+
+        header {
+            background-color: rgb(101, 101, 253);
+            padding: 10px;
+            align-items: center;
+            text-align: end;
+            position: sticky;
+        }
+
+        a {
+            text-decoration: none;
+            color: #19191a;
+            margin-inline: 5px;
+            background-color: yellow;     
+        }
+
+      .cards{
+    background-color: rgb(241, 245, 244);
+    display: flex;
+    gap: 40px;
+
+ }
+
+      .a{
+        background-color:cornflowerblue ;
+    flex-direction: column-reverse;
+        
+      }
+ .b{
+    background-color: blueviolet;
+ }
+
+ .c{
+    background-color: chocolate;
+ }
+      main{
+        padding: 10px;
+      }
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            Layout Responsivo
+        </h1>
+        <nav>
+            <a href="link"> Link</a>
+            <a href="link">Link</a>
+            <a href="link">Link</a>
+        </nav>
+    </header>
+    <main class="cards">
+        <article class="a">
+            <h2>Coluna A</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ullam non, sunt natus saepe, maiores
+                laborum soluta exercitationem facere repellendus explicabo inventore itaque dolore quo in voluptatum
+                possimus quos veritatis.</p>
+        </article>
+
+        <article class="b">
+            <h2>Coluna B</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum unde quis velit corrupti labore quisquam
+                necessitatibus reprehenderit laudantium numquam libero! Ratione velit eveniet quidem numquam officia, ab
+                voluptatum eaque in!</p>
+        </article>
+
+        <article class="c">
+            <h2>
+                Coluna C
+            </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, voluptatem ullam dolores optio ducimus
+                quam ab esse iure temporibus voluptates a enim illum velit facere fuga aperiam corporis in nulla! Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, pariatur cupiditate deleniti magni
+                soluta possimus aliquid dolorem neque, nihil nulla atque obcaecati rerum numquam, ea repellat? Laborum
+                repudiandae excepturi repellat.</p>
+        </article>
+    </main>
+    <footer>
+        <h2>Rodapé</h2>
+        <p>Lorem ipsum dolor, sit amet</p>
+    </footer>
+
+</body>
+
+</html>
